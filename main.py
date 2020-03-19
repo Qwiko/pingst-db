@@ -10,7 +10,7 @@ db_init = Flata('db.json', storage=JSONStorage)
 db_init.table('config', id_field = 'id')
 db = db_init.get('config')
 
-from flask_cors import CORS
+#from flask_cors import CORS
 
 
 
@@ -31,7 +31,7 @@ from flask_cors import CORS
 #   }
 
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
 
 #/db/data
 @app.route('/data', methods=['GET', 'POST'])
